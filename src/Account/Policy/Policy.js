@@ -44,8 +44,10 @@ const Policy = () => (
       </div>
       <div className={styles.content}>
         <header>
-          <h1>WHAT YOU KEEP WITH US</h1>
-          <figure>1</figure>
+          <div>
+            <h1>WHAT YOU KEEP WITH US</h1>
+            <figure>1</figure>
+          </div>
         </header>
         <article>
           <p className={styles.section}>1.1</p>
