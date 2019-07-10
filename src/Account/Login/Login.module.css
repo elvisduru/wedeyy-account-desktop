@@ -1,0 +1,84 @@
+.Login {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f8f8;
+}
+
+.Login form {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+
+.Login form > div {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 50px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header > div {
+  width: 80px;
+  height: 1px;
+  background-color: #d2d2d2;
+}
+
+.header h1 {
+  font-family: "Nunito", sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: bolder;
+}
+
+.Login form input {
+  border: 1px solid #d2d2d2;
+  background-color: rgba(0, 104, 53, 0.07);
+  font-size: 12px;
+  font-family: "Nunito", sans-serif;
+  line-height: 14px;
+  padding: 17px;
+  border-radius: 3px;
+  margin: 10px 0;
+}
+
+.Login form button {
+  border: 1px solid #d2d2d2;
+  background-color: #4a906f;
+  padding: 17px;
+  border-radius: 3px;
+  margin: 10px 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.Login form a {
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  color: #a21422;
+  margin-left: auto;
+  margin-top: 7px;
+  text-decoration: none;
+}
+
+.footer {
+  margin-top: auto;
+  padding: 16px;
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "Nunito", sans-serif;
+  color: #192429;
+  background-color: rgba(0, 104, 53, 0.07);
+}
+
+.footer a {
+  font-weight: bold;
+  color: rgba(0, 104, 53, 1);
+  text-decoration: none;
+}

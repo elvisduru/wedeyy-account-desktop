@@ -1,0 +1,71 @@
+.Policy {
+  display: flex;
+  flex-direction: column;
+}
+
+.Policy > header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+  background-color: rgba(74, 144, 111, 1);
+}
+
+.Policy > main > .intro {
+  background-color: #307e58;
+  color: white;
+  padding: 59px 30px;
+  text-align: left;
+}
+
+.Policy > main > .intro h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 28px;
+  line-height: 37px;
+  font-weight: bold;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.Policy > main > .intro p {
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  line-height: 25px;
+  font-weight: 100;
+  margin: 15px 0;
+}
+
+.Policy .terms {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.Policy .terms .top {
+  background-color: rgba(0, 104, 53, 0.07);
+  color: rgba(79, 86, 94, 1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  line-height: 25px;
+  font-weight: 300;
+  padding: 53px 30px;
+}
+
+.Policy .terms .bottom {
+  color: rgba(79, 86, 94, 1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  line-height: 25px;
+  font-weight: 300;
+  padding: 100px 33px 0;
+}
+
+.Policy .terms .bottom > div {
+  display: flex;
+}
+
+.Policy .terms .bottom > div > div {
+  width: 40px;
+  height: 40px;
+  margin-right: 16px;
+}
