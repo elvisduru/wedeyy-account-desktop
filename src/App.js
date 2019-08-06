@@ -13,16 +13,20 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Switch>
-          <Route path="/" exact component={Login} />
-          <Route path="/signup" exact component={Signup} />
-          <Route path="/confirm" exact component={Confirm} />
-          <Route path="/reset" exact component={Reset} />
-          <Route path="/forgot" exact component={Forgot} />
-          <Route path="/openaccount" exact component={OpenAccount} />
-          <Route path="/policy" exact component={Policy} />
-          <Redirect to="/" />
-        </Switch>
+        <div style={{
+          width: '25vw'
+        }}>
+          <Switch>
+            <Route path="/" exact component={Login} />
+            <Route path="/signup" exact component={Signup} />
+            <Route path="/confirm" exact component={Confirm} />
+            <Route path="/reset" exact component={Reset} />
+            <Route path="/forgot" exact component={Forgot} />
+            <Route path="/openaccount" exact component={OpenAccount} />
+            <Route path="/policy" exact component={Policy} />
+            <Redirect to="/" />
+          </Switch>
+        </div>
       </BrowserRouter>
     </div>
   );

@@ -21,7 +21,7 @@ class Login extends Component {
 
   render() {
     return (
-      <div className={styles.Login} >
+      <div className={styles.Login}>
         <form autoComplete="off">
           <img src={logo} alt="logo" />
           <div>
