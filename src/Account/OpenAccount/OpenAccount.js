@@ -16,15 +16,17 @@ export default class OpenAccount extends Component {
   render() {
     return (
       <div className={styles.OpenAccount}>
-        <header>
-          <img src={backIcon} alt="" onClick={this.goBack} />
-        </header>
-        <main>
-          <h1>Find your Wedeyy account</h1>
-          <img src={this.state.avatar} alt="" />
-          <h2>{this.state.fullname}</h2>
-          <Link to="/login">Send recovery link</Link>
-        </main>
+        <div className={styles.wrapper}>
+          <header>
+            <img src={backIcon} alt="" onClick={this.goBack} />
+          </header>
+          <main>
+            <h1>Find your Wedeyy account</h1>
+            <img src={this.state.avatar} alt="" />
+            <h2>{this.state.fullname}</h2>
+            <Link to="/login">Send recovery link</Link>
+          </main>
+        </div>
       </div>
     )
   }

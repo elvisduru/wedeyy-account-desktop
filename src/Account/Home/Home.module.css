@@ -1,0 +1,88 @@
+.Home {
+  padding: 20px 80px;
+}
+
+.top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top input {
+  border: 1px solid #abd8c3;
+  background-color: white;
+  font-size: 12px;
+  font-family: "Nunito", sans-serif;
+  line-height: 14px;
+  padding: 17px;
+  border-radius: 30px;
+  width: 230px;
+  margin: 10px 0;
+  outline: none;
+}
+
+.top input:focus {
+  box-shadow: 0 0 3px #4a906f;
+}
+
+.top button {
+  border: 1px solid #d2d2d2;
+  background-color: #4a906f;
+  padding: 17px 30px;
+  border-radius: 30px;
+  margin: 10px 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  color: white;
+  cursor: pointer;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 80px;
+}
+
+.bottom > img {
+  width: 180px;
+}
+
+.bottom h1 {
+  font-size: 27px;
+  width: 350px;
+  text-align: left;
+  line-height: 34px;
+  margin-top: 30px;
+  font-weight: 700;
+}
+
+.bottom h3 {
+  margin-top: 50px;
+  font-size: 19px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.bottom a {
+  margin-top: 30px;
+  border: 1px solid #d2d2d2;
+  background-color: #4a906f;
+  padding: 9px;
+  border-radius: 30px;
+  margin: 10px 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  color: white;
+  cursor: pointer;
+  width: 320px;
+  text-decoration: none;
+}
+
+.bottom a:hover, .Home a.login:hover {
+  box-shadow: 0 0 3px #4a906f;
+}
+
+.Home a.login {
+  background-color: white;
+  color: #000;
+}

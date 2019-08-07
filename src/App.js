@@ -8,16 +8,20 @@ import Reset from './Account/Reset/Reset';
 import Forgot from './Account/Forgot/Forgot';
 import OpenAccount from './Account/OpenAccount/OpenAccount';
 import Policy from './Account/Policy/Policy';
+import Slider from './components/Slider/Slider';
+import Home from './Account/Home/Home';
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <div style={{
-          width: '25vw'
-        }}>
+      <div className="left">
+        <Slider />
+      </div>
+      <div className="right">
+        <BrowserRouter>
           <Switch>
-            <Route path="/" exact component={Login} />
+            <Route path="/" exact component={Home} />
+            <Route path="/login" exact component={Login} />
             <Route path="/signup" exact component={Signup} />
             <Route path="/confirm" exact component={Confirm} />
             <Route path="/reset" exact component={Reset} />
@@ -26,8 +30,8 @@ function App() {
             <Route path="/policy" exact component={Policy} />
             <Redirect to="/" />
           </Switch>
-        </div>
-      </BrowserRouter>
+        </BrowserRouter>
+      </div>
     </div>
   );
 }

@@ -22,24 +22,26 @@ class Login extends Component {
   render() {
     return (
       <div className={styles.Login}>
-        <form autoComplete="off">
-          <img src={logo} alt="logo" />
-          <div>
-            <div className={styles.header}>
-              <div />
-              <h1>Login</h1>
-              <div />
+        <div className={styles.wrapper}>
+          <form autoComplete="off">
+            <img src={logo} alt="logo" />
+            <div>
+              <div className={styles.header}>
+                <div />
+                <h1>Log in</h1>
+                <div />
+              </div>
+              <input type="text" value={this.state.fields.username} name="username" onChange={this.handleInputChange} placeholder="Enter Phone number, Username, or Email" />
+              <input type="password" autoComplete="new-password" value={this.state.fields.password} name="password" onChange={this.handleInputChange} placeholder="Enter Password" />
+              <button>
+                <img src={rightIcon} alt="" />
+              </button>
+              <Link to="/forgot">Forgot password?</Link>
             </div>
-            <input type="text" value={this.state.fields.username} name="username" onChange={this.handleInputChange} placeholder="Enter Phone number, username, or email" />
-            <input type="password" autoComplete="new-password" value={this.state.fields.password} name="password" onChange={this.handleInputChange} placeholder="Enter Password" />
-            <button>
-              <img src={rightIcon} alt="" />
-            </button>
-            <Link to="/forgot">Forgot password?</Link>
+          </form>
+          <div className={styles.footer}>
+            <p>Don't have account yet? <Link to="/signup">Sign Up</Link></p>
           </div>
-        </form>
-        <div className={styles.footer}>
-          <p>Don't have account yet? <Link to="/signup">Sign Up</Link></p>
         </div>
       </div>
     )

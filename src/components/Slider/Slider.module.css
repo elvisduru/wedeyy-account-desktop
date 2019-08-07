@@ -1,0 +1,17 @@
+.Slider {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.Slider > img {
+  width: 100%;
+  opacity: 0.1;
+  transition: opacity 1s linear;
+}
+
+.fadeIn {
+  opacity: 1 !important;
+}

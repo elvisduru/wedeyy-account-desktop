@@ -37,16 +37,18 @@ export default class Forgot extends Component {
     ) : null;
     return (
       <div className={styles.Forgot}>
-        <header>
-          <img src={backIcon} alt="" onClick={this.goBack} />
-        </header>
-        <main>
-          <h1>Find your Wedeyy account</h1>
-          <p>Enter Phone number, username, or email</p>
-          <input type="text" value={this.state.username} name="username" onChange={this.handleInputChange} placeholder="Enter Phone number, username, or email" />
-          <button onClick={this.handleFoundUsers}><img src={searchIcon} alt="search" /></button>
-        </main>
-        {foundUsers}
+        <div className={styles.wrapper}>
+          <header>
+            <img src={backIcon} alt="" onClick={this.goBack} />
+          </header>
+          <main>
+            <h1>Find your Wedeyy account</h1>
+            <p>Enter Phone number, username, or email</p>
+            <input type="text" value={this.state.username} name="username" onChange={this.handleInputChange} placeholder="Enter Phone number, username, or email" />
+            <button onClick={this.handleFoundUsers}><img src={searchIcon} alt="search" /></button>
+          </main>
+          {foundUsers}
+        </div>
       </div>
     )
   }
